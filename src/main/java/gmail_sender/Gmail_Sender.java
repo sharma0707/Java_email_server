@@ -2,9 +2,11 @@ package gmail_sender;
 
 import java.util.Properties;
 
+
 import javax.mail.Authenticator;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
+import javax.mail.Transport;
 
 import jakarta.mail.Message;
 import jakarta.mail.internet.InternetAddress;
@@ -40,6 +42,10 @@ public class Gmail_Sender {
 			msg.setFrom(new InternetAddress(from));
 			msg.setSubject(subject);
 			msg.setText(message);
+			
+			jakarta.mail.Transport.send(msg);
+			
+			
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
