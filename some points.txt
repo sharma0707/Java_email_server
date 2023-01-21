@@ -1,0 +1,6 @@
+In pom.xml file,
+there is jakarata.mail group id in line number 26 if you will you use thid dependency the it will throw error 
+<!----------Not provider of jakarta.mail.util.StreamProvider was found ------>
+
+so regarding this error , solution is given on stackoverflow
+that you can only use (jakarta.mail) instead of  (jakarta.mail-api) 

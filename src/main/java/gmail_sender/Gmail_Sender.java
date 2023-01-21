@@ -26,7 +26,7 @@ public class Gmail_Sender {
 		
 		
 		String username = "aws7530";
-		String password = "";
+		String password = "password";
 		
 		jakarta.mail.Session session = jakarta.mail.Session.getInstance(properties, new jakarta.mail.Authenticator() {
 			@Override
@@ -51,7 +51,7 @@ public class Gmail_Sender {
 		}
 		
 		
-		return false;
+		return flag;
 		
 	}
 
